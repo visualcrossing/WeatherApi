@@ -1,0 +1,93 @@
+ /*General sample CSS*/
+* {
+	 box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body { 
+	margin:0;
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	font-family:arial;
+}
+
+
+.header {
+	padding:10px;
+	background-color:#78aad5;
+	color:#ffffff;
+	height:140px;
+}
+.sampledesc {
+	padding:5px;
+	font-size:0.8em;
+}
+.controls {
+	width:100%;
+	
+}
+.controls div {
+	display:inline;
+}
+
+
+input.uri {
+    padding: 3px;
+   
+	width:90%;
+	background-color:#cfcfcf;
+}
+
+.controls input[type=text],.controls select {
+	  padding: 4px 8px;
+	  margin: 2px 0;
+	  box-sizing: border-box;
+	  border: 3px solid #ccc;
+	  -webkit-transition: 0.5s;
+	  transition: 0.5s;
+	  outline: none;
+}
+.controls input[type=text]:focus {
+  border: 3px solid #555;
+}
+button {
+	 background-color: #4CAF50;
+	  border: none;
+	  color: white;
+	  padding: 8px 12px;
+	  text-decoration: none;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+.isloadingdata .disableonload {
+	pointer-events:none;
+	
+}
+.isloadingdata button.disableonload {
+	background-color:hsl(0, 0%, 77%);
+}
+.isloadingdata .hideonloading {
+	display:none;
+}
+.showonloading {
+	display:none;
+}
+.isloadingdata .showonloading {
+	display:inline;
+}
+
+
+h3,h4 {
+	margin:2px;
+
+}
+.floatRight {
+	float:right;
+}
+.padleft {
+	padding-left:50px;
+}
