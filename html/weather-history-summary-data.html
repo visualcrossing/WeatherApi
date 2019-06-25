@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Weather History Summary Data | Visual Crossing Weather API Sample</title>
+	<!--jquery used for sample UI components -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+	
+	<!-- common styling for sample - not critical for operation -->
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<!-- styling for sample -->
+	<style>
+	
+	.rawresults {
+		width: 100%;
+		height:70vh;
+		resize: none;
+	}
+	
+	
+	
+  </style>
+   <script>
+/*
+	Plotter encapsulates the data loading 
+*/
+   var plotter=(function() {
+		//basic info to config the sample including the sample data description
+		var config={
+			"sample":{
+				"path":"samplehistorysummarydata.csv",
+				"location":"Reston,VA", 
+				"chronoUnit":"weeks"
+			},
+			"unitGroup":"us"
+		}
+   
+ 
+		var data;
+		//used to load the inital sample data
+		var loadSampleData=function() {
+			$('.location').val(config.sample.location);
+			$('.chronoUnit').val(config.sample.chronoUnit);
+			loadData(config.sample.path);
+		}
+		//constructs Weather API request and then load remote data from the Weather API
+		var loadRemoteData=function() {
+			var location=$('.location').val();
+			var chronoUnit=$('.chronoUnit').val();
+			var key=$('.key').val();
+			var breakBy=$('.breakByYear').prop('checked')?"years":"self";
+			//endpoint
+			var uri="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/historysummary?";
+			//parameters
+			uri+="unitGroup="+config.unitGroup+"&chronoUnit="+chronoUnit+"&breakBy="+breakBy+"&dailySummaries=true&shortColumnNames=true&location="+location+"&key="+key;
+			loadData(uri);
+		}
+		
+		//submits the data request
+		var loadData=function(uri) {
+			$('.uri').val(uri);
+			$("body").addClass("isloadingdata");
+			
+			$.get( uri, function( rawResult ) {
+				$('.rawresults').val(rawResult);
+				$("body").removeClass("isloadingdata");
+				
+				
+			});
+
+		}
+		
+		$( ".refreshButton" ).click( function() {
+			loadRemoteData();
+		});
+		
+		
+		loadSampleData();
+		
+		return {
+			"loadRemoteData":loadRemoteData
+		}
+	});
+  
+	
+  </script>
+ 
+  
+</head>
+<body>
+ 
+ <!--General sample code header -->
+ <div class="header">
+	<h3>History Summary Data</h3>
+	<div class="sampledesc">
+	<span>This sample requres an Weather API key to request new data. <a href="https://weather.visualcrossing.com/weather/weather-data-services.html?&s=apisample&showSignup=1" target="_blank">Sign up for a key</a>
+	<span><a href="https://www.visualcrossing.com/weather-data" target="_blank">More information on the weather API</a></span>
+	</div>
+	<div class="controls disableonload">
+		<div><input type="text" class="location" placeholder="Enter address" value=""/></div>
+		<div>
+			Display by 
+		</div>
+		<div>
+			<select class="chronoUnit">
+				<option value="years">Year</option>
+				<option value="months">Month</option>
+				<option value="weeks">Week</option>
+				<option value="days">Days</option>
+			</select>
+		</div>
+		<div><input type="checkbox" class="breakByYear"/>Break by year</div>
+		<div  class="padleft">
+			Weather API key
+		</div>
+		<div><input type="text" class="key"  placeholder="Enter your api key"  value=""/> </div>
+		<div>
+			<button class="refreshButton hideonloading">Refresh</button>
+			<span class="showonloading">Loading...</span>
+		</div>
+		
+	</div>
+	<div>
+		<span>Request URL:</span>
+		<input type="text" class="uri" placeholder="Request URI" value=""/>
+	</div>
+	
+ </div>
+ <!-- Sample code output -->
+ <div>
+		<h4>
+			Raw results
+		</h4>
+		<textarea class="rawresults"/> </textarea>
+	</div>
+ 
+ 
+ <script>
+	plotter();
+ </script>
+</body>
+</html>

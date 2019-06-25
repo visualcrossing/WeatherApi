@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Weather Forecast Data | Visual Crossing Weather API Sample</title>
+	<!--jquery used for sample UI components -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+	
+	<!-- common styling for sample - not critical for operation -->
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<!-- styling for sample -->
+	<style>
+	
+	.rawresults {
+		width: 100%;
+		height:70vh;
+		resize: none;
+	}
+	
+	
+	
+  </style>
+   <script>
+/*
+	Plotter encapsulates the data loading 
+*/
+   var plotter=(function() {
+		//basic info to config the sample including the sample data description
+		var config={
+			"sample":{
+				"path":"sampleforecastdata.csv",
+				"location":"Reston,VA"
+			}
+		}
+   
+ 
+		var data;
+		//used to load the inital sample data
+		var loadSampleData=function() {
+			$('.location').val(config.sample.location);
+			$('.chronoUnit').val(config.sample.chronoUnit);
+			loadData(config.sample.path);
+		}
+		//constructs Weather API request and then load remote data from the Weather API
+		var loadRemoteData=function() {
+			var location=$('.location').val();
+			var aggregateHours=$('.aggregateHours').val();
+			
+			var unitGroup=$('.unitGroup').val();
+		
+			var key=$('.key').val();
+			//endpoint
+			var uri="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?";
+			//parameters
+			uri+="unitGroup="+unitGroup+
+				"&aggregateHours="+aggregateHours+
+				"&shortColumnNames=true"+
+				"&location="+location+
+				"&key="+key;
+			loadData(uri);
+		}
+		
+		//submits the data request
+		var loadData=function(uri) {
+			$('.uri').val(uri);
+			$("body").addClass("isloadingdata");
+			
+			$.get( uri, function( rawResult ) {
+				$('.rawresults').val(rawResult);
+				$("body").removeClass("isloadingdata");
+				
+				
+			});
+
+		}
+		
+		$( ".refreshButton" ).click( function() {
+			loadRemoteData();
+		});
+		
+		
+		loadSampleData();
+		
+		return {
+			"loadRemoteData":loadRemoteData
+		}
+	});
+  
+	
+  </script>
+ 
+  
+</head>
+<body>
+ 
+ <!--General sample code header -->
+ <div class="header">
+	<h3>Weather Forecast Data</h3>
+	<div class="sampledesc">
+	<span>This sample requres an Weather API key to request new data. <a href="https://weather.visualcrossing.com/weather/weather-data-services.html?&s=apisample&showSignup=1" target="_blank">Sign up for a key</a>
+	<span><a href="https://www.visualcrossing.com/weather-data" target="_blank">More information on the weather API</a></span>
+	</div>
+	<div class="controls disableonload">
+		<div><input type="text" class="location" placeholder="Enter address" value=""/></div>
+		<div>
+			aggregateHours 
+		</div>
+		<div>
+			<select class="aggregateHours">
+				<option value="1">1</option>
+				<option value="12">12</option>
+				<option value="24">24</option>
+			</select>
+		</div>
+		<div>
+			unitGroup 
+		</div>
+		<div>
+			<select class="unitGroup">
+				<option value="us">us</option>
+				<option value="metric">metric</option>
+				<option value="uk">uk</option>
+				<option value="base">base</option>
+			</select>
+		</div>
+		
+		
+		<div  class="padleft">
+			Weather API key
+		</div>
+		<div><input type="text" class="key"  placeholder="Enter your api key"  value=""/> </div>
+		<div>
+			<button class="refreshButton hideonloading">Refresh</button>
+			<span class="showonloading">Loading...</span>
+		</div>
+		
+	</div>
+	<div>
+		<span>Request URL:</span>
+		<input type="text" class="uri" placeholder="Request URI" value=""/>
+	</div>
+	
+ </div>
+ <!-- Sample code output -->
+ <div>
+		<h4>
+			Raw results
+		</h4>
+		<textarea class="rawresults"/> </textarea>
+	</div>
+ 
+ 
+ <script>
+	plotter();
+ </script>
+</body>
+</html>
