@@ -6,5 +6,8 @@ Documentation for the Weather API can be found at https://www.visualcrossing.com
 
 Samples contents:
 
-html_samples: HTML and Javascript based examples of using the Weather APIs.
 D3_samples: D3 (https://d3js.org/) visualization framework samples (within a HTML/Javascript environment).
+
+html_samples: HTML and Javascript based examples of using the Weather APIs.
+
+
