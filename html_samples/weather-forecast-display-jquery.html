@@ -114,7 +114,7 @@
             grid-column: default ;
         }
        
-        
+        /*element styling rules*/
         .forecastwidget .location {
             font-size: 1em;
             font-weight: bold;
@@ -141,9 +141,6 @@
             border-right:none;
             border-bottom:1px solid darkgray;
         }
-
-
-      
 
         .forecastwidget .days .day .conditions {
             display:none;
@@ -269,6 +266,9 @@
                     
                     //date is added with a little additional formatting
                     var date= new Date(d.datetime);
+                    //by default the values are returned in the local time zone of the location requested 
+                    date=new Date(date.getTime()+ date.getTimezoneOffset()*60000);
+
                     dayElement.find(".date").html(MONTHS[date.getMonth()]+" "+date.getDate());
 
 
