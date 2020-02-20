@@ -17,5 +17,5 @@ html_samples: HTML and Javascript based examples of using the Weather APIs.
 
 python_samples: Examples of using Weather API within Python scripts
 
-
+excel_workbooks: Examples of using Weather Data within Microsoft Excel workbooks.
 
