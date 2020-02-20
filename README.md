@@ -1,4 +1,4 @@
-# WeatherApi
+# WeatherApi and Weather Data
 
 The Visual Crossing Weather Data API provides developers with weather data for any programming language or script. The Weather API provides instant and scalable access to both historical weather reports and forecast data in an easy to use JSON or text format. See https://www.visualcrossing.com/weather-api for more information and additional documentation, sample code and use cases.
 
