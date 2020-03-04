@@ -1,0 +1,210 @@
+
+        
+        .forecastwidget {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            font-size: 14px;
+            background-color: #ffffff;
+            overflow:hidden;
+            border-radius: 5px;
+        }
+        .forecastwidget .icon {
+            height:40px;
+            width:40px;
+             
+        }
+        .forecastwidget .icon.sunny {background-image:url(images/sun.png);}
+        .forecastwidget .icon.partsunny {background-image:url(images/partsun.png);}
+        .forecastwidget .icon.cloudy {background-image:url(images/cloudy.png);}
+        .forecastwidget .icon.rain {background-image:url(images/rain.png);}
+        .forecastwidget .icon.snow {background-image:url(images/snow.png);}
+
+        .forecastwidget .noselect {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10+ and Edge */
+            user-select: none; /* Standard syntax */
+        }
+        
+        .forecastwidget .days {
+           position: relative;
+          
+            max-height: 100px;
+          
+            flex: 1;
+        }
+        .forecastwidget .chart {
+            flex: 1;
+        }
+        .forecastwidget .chart .line {
+            fill: url(#temperature-gradient);
+            stroke-width: 05px;
+        }
+        .forecastwidget .chart .precipbar {
+            fill: #196eb7;
+        }
+
+        .forecastwidget .chart .grid line {
+            stroke: darkgray;
+
+            shape-rendering: crispEdges;
+            }
+
+        .forecastwidget .chart .grid path {
+            stroke-width: 0;
+        }
+
+
+        .forecastwidget .days.vertical {
+            flex-direction: column;
+            font-size: 1.2em;
+        }
+
+        /*define a grid layout with two columns*/
+        .forecastwidget .days .day {
+            position: absolute;
+
+
+            display: grid;
+			grid-template-columns: 50% 50%;
+			
+            justify-content: center;
+            align-items: center;
+            padding: 0px 5px;
+            font-size: 0.9em;
+            justify-items: center;
+            grid-gap: 1px;
+            cursor: grab;
+        }   
+        /*
+        .forecastwidget .days .day:hover {
+            background-color:lightgrey;
+        }
+        */
+		/*most forecast elements take up two columns*/
+        .forecastwidget .days .day * {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+		/*maximum and minimum elements are arrange side by side*/
+        .forecastwidget .days .day .maxt {
+            grid-column: 1 ;
+        }
+        .forecastwidget .days .day .mint {
+            grid-column: 2 ;
+        }
+        
+        /*define a grid layout with size columns*/
+        .forecastwidget .days.vertical .day {
+            grid-template-columns: 50px 30px 30px 30px 60px auto;
+            grid-gap: 4px;
+            justify-content: start;
+            margin: 2px 0px;
+            padding: 4px 0px;
+        }
+        /*Every element takes up a single grid cell*/
+        .forecastwidget .days.vertical .day * {
+            grid-column: span 1;
+        }
+         /*No special layout is required for the temperature values*/
+        .forecastwidget .days.vertical .day .maxt,  .forecastwidget .days.vertical .day .mint  {
+            grid-column: default ;
+        }
+       
+        /*element styling rules*/
+        .forecastwidget .location {
+           
+            flex: 0;
+            
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .forecastwidget .location .value {
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .forecastwidget .location .editor {
+            display:none;
+            position: absolute;
+            padding: 5px;
+            margin: 1px 0px;
+            font-size: 1.2em;
+            z-index: 1;
+        }
+        .forecastwidget .location .value:hover {
+            color:darkgrey;
+        }
+        .forecastwidget .location.edit .editor {
+            display:block;
+        }
+        
+        .forecastwidget .footer {
+            font-size: 0.8em;
+            color: darkgrey;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .forecastwidget .footer *{
+            padding:2px 5px;
+        }
+        .forecastwidget .viewchooser {
+            font-size: 0.8em;
+            padding: 2px 5px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 1px 0px;
+
+        }
+        .forecastwidget .viewchooser.day {
+            margin-left:auto;
+        }
+        .forecastwidget .viewchooser:hover {
+            background-color:lightgrey;
+        }
+        .forecastwidget .viewchooser.selected {
+            background-color:darkgrey;
+            color:white;
+           
+        }
+
+        .forecastwidget .days .day .date {
+            color: darkgrey;
+            font-size: 1.1em;
+            white-space: nowrap;
+            
+        }
+        .forecastwidget.edit .days {
+            opacity: 0.1;
+        }
+
+       
+        .forecastwidget .days .day .icon {
+            padding: 5px 0px;
+        }
+        .forecastwidget .days .day .conditions {
+            display:none;
+            color:darkgrey;
+            font-size: 0.9em;
+        }
+        .forecastwidget .days.vertical .day .conditions {
+            display:block;
+        }
+        .forecastwidget .days .day  .maxt {
+            font-weight: bold;
+        }
+        .forecastwidget .days .day  .mint {
+            font-size: 0.9em;
+            color:darkgrey;
+        }
+       
+        .forecastwidget .days .day  .hidden {
+           visibility: hidden;
+           display:none;
+        }
