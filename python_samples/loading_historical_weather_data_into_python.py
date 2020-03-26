@@ -1,4 +1,5 @@
-#Downloading weather data using Python as a CSV. See XYZ for more information.
+#Downloading weather data using Python as a CSV using the Visual Crossing Weather API
+#See https://www.visualcrossing.com/resources/blog/how-to-load-historical-weather-data-using-python-without-scraping/ for more information.
 import csv
 import codecs
 import urllib.request
