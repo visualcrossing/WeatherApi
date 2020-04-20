@@ -219,7 +219,7 @@
                 //endpoint
                 var uri="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?";
                 //parameters
-                uri+="unitGroup="+me.config.unitGroup+"&locationMode=single&aggregateHours=24&contentType=json&shortColumnNames=true&iconSet=icons1&location="+me.config.location+"&key="+me.config.key;
+                uri+="unitGroup="+me.config.unitGroup+"&locationMode=single&aggregateHours=24&contentType=json&iconSet=icons1&location="+me.config.location+"&key="+me.config.key;
                 $.get(uri, function( rawResult ) {
                     me.data=rawResult;
                     me.refresh();
@@ -263,7 +263,7 @@
                             "<div class='icon'></div>"+
                             "<div class='maxt'></div>"+
                             "<div class='mint'></div>"+
-                            "<div class='precip'><i class='fas fa-tint fa-xs fa-fw'></i><span class='value'></span></div>"+
+                            "<div class='precip'><span class='value'></span></div>"+
                             "<div class='conditions'></div>"+
                             "</div>");
                     
