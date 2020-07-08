@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Degree Day Tester | Visual Crossing Weather API Sample</title>
+	
+		<!--d3 v4 used for rendering chart -->
+	<script src="https://d3js.org/d3.v4.js"></script>
+	
+	<!--jquery used for sample UI components -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+	
+	<!-- common styling for sample - not critical for operation -->
+	<link rel="stylesheet" type="text/css" href="common.css">
+	
+	
+
+	<!-- styling for sample -->
+	<style>
+	
+	.rawresults {
+		width: 100%;
+		height: 50px;
+		resize: none;
+	}
+	
+	
+	.chartContainer {
+		width:100%;
+		height:70vh;
+	}
+
+	.cumulativedegreedaysline {
+		fill: none;
+		stroke: #f15656;
+		stroke-width: 2px;
+	}
+	.mincumulativedegreedaysline {
+		fill:none;
+		stroke:red;
+	}
+	.maxcumulativedegreedaysline {
+		fill:none;
+		stroke:green;
+	}
+	.meancumulativedegreedays {
+		fill: none;
+    stroke: grey;
+    stroke-dasharray: 2.5;
+	}
+	.area {
+		fill:#e0dfdf;
+		stroke:black;
+	}
+	
+  </style>
+   <script>
+/*
+	Plotter encapsulates the data loading 
+*/
+   var plotter=(function() {
+		//basic info to config the sample including the sample data description
+		var config={
+			
+		}
+   
+ 
+		var data;
+		var addParam=function (key,value) {
+			if (value || value===0) return "&"+key+"="+value;
+			return "";
+		}
+		//constructs Weather API request and then load remote data from the Weather API
+		var loadRemoteData=function() {
+			var location=$('.location').val();
+			
+			var degreeDayStats=$('.degreeDayStats').prop('checked') ;
+			var degreeDayStartDate=$('.degreeDayStartDate').val() || "";
+			var degreeDayEndDate=$('.degreeDayEndDate').val() || "";
+			var degreeDayTempFix=$('.degreeDayTempFix').val() || "";
+			var degreeDayTempMaxThreshold=$('.degreeDayTempMaxThreshold').val() || "";
+			var degreeDayTempBase=$('.degreeDayTempBase').val() || "";
+			var degreeDayInverse=$('.degreeDayInverse').prop('checked') ;
+			var degreeDayFocusYear=$('.degreeDayFocusYear').val() || "";
+			var minYear=$('.minYear').val() || "";
+
+			var unitGroup=$('.unitGroup').val();
+			var key=$('.key').val();
+			//endpoint
+			var uri="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/degreedays?";
+			
+			//parameters
+			uri+=addParam("unitGroup",unitGroup)+
+				addParam("minYear",minYear)+
+				addParam("degreeDayStats",degreeDayStats)+
+				addParam("degreeDayStartDate",degreeDayStartDate)+
+				addParam("degreeDayEndDate",degreeDayEndDate)+
+				addParam("degreeDayTempFix",degreeDayTempFix)+
+				addParam("degreeDayTempMaxThreshold",degreeDayTempMaxThreshold)+
+				addParam("degreeDayTempBase",degreeDayTempBase)+
+				addParam("degreeDayInverse",degreeDayInverse)+
+				addParam("degreeDayFocusYear",degreeDayFocusYear)+
+				addParam("shortColumnNames","true")+
+				addParam("location",location)+
+				addParam("key",key)
+				
+			
+			
+			loadData(uri);
+		}
+		
+		//submits the data request
+		var loadData=function(uri) {
+			$('.uri').val(uri);
+			$("body").addClass("isloadingdata");
+			
+			$.get( uri, function( rawResult ) {
+				$('.rawresults').val(rawResult);
+				$("body").removeClass("isloadingdata");
+				data=d3.csvParse(rawResult, function(d, i) {
+					   return {
+						date: d.date,
+						cumulativedegreedays: +d.cumulativedegreedays,
+						mincumulativedegreedays: +d.mincumulativedegreedays,
+						maxcumulativedegreedays: +d.maxcumulativedegreedays,
+						meancumulativedegreedays: +d.meancumulativedegreedays
+					   };
+					});
+				render();
+				
+			});
+
+		}
+		
+		$( ".refreshButton" ).click( function() {
+			loadRemoteData();
+		});
+		
+		
+		var chartContainer = d3.select('.chartContainer');
+		
+		var popup=d3.select(".popup");
+		var margin = {top: 20, right: 20, bottom: 30, left: 30};
+
+		var width, height, totalWidth, totalHeight;
+		
+		
+			
+		// define the area
+		//area section is the area between the daily 50% percentile minimum and maximum to show the normal daily range
+		var area = d3.area()
+			.curve(d3.curveBasis)
+			.x(function(d, i) { return x(i); })
+			.y0(function(d) { return y(d.mincumulativedegreedays); })
+			.y1(function(d) { return y(d.maxcumulativedegreedays); })
+			.defined(function(d) {
+				return d.mincumulativedegreedays || d.maxcumulativedegreedays;
+			});
+		
+		// define the lines
+		//cumulativedegreedays = minimum temperature link 
+		var cumulativedegreedaysline = d3.line()
+			.curve(d3.curveBasis)
+			.x(function(d, i) { return x(i); })
+			.y(function(d) { return y(d.cumulativedegreedays); })
+			.defined(function(d) {
+				return d.cumulativedegreedays;
+			});
+		//mincumulativedegreedays = maximum temperature link 
+		
+		//meancumulativedegreedays
+		var meancumulativedegreedays = d3.line()
+			.curve(d3.curveBasis)
+			.x(function(d, i) { return x(i); })
+			.y(function(d) { return y(d.meancumulativedegreedays); });
+		
+		
+		var svg = chartContainer.append("svg")
+			.attr("class", "containerSvg")
+			.append("g")
+				.attr("transform",
+				 "translate(" + margin.left + "," + margin.top + ")")
+			
+		svg.append("g")
+			.attr("class", "x-axis")
+		svg.append("g")
+			.attr("class", "y-axis")
+
+		
+			
+		var x = d3.scaleLinear();
+		
+		var y = d3.scaleLinear();
+		
+		var xAxis = d3.axisBottom(x);
+		var yAxis = d3.axisLeft(y);
+			
+			
+		var resize=function() {
+		
+			width = chartContainer.node().getBoundingClientRect().width;
+			height = chartContainer.node().getBoundingClientRect().height;
+			
+		
+			width = width - margin.left - margin.right,
+			 height = height - margin.top - margin.bottom;
+
+			totalWidth = width + margin.left + margin.right;
+			totalHeight = height + margin.top + margin.bottom;
+		
+			d3.select(".containerSvg")
+			.attr("width", totalWidth)
+			.attr("height", totalHeight)
+			;
+			 
+			d3.select(".traceline").attr("y2", height );
+			x.range([0, width]);
+			y.range([height, 0]);
+		}
+		
+			
+			
+				
+			
+		resize();
+		
+		window.addEventListener("resize",function() {
+			resize();
+			render();
+		});
+
+		
+		var render=function() {
+			
+			// scale the range of the data
+			x.domain([0, data.length]);
+			y.domain([0,d3.max(data, function(d) { return d.maxcumulativedegreedays; })+50]);
+			
+
+			
+
+			var u;
+			
+			u = svg.selectAll(".area")
+				.data([data]);
+
+			u.enter()
+				.append("path")
+				.attr("class","area")
+				.attr("d",  area)
+				.merge(u)
+				.transition()
+				.duration(1000)
+				.attr("d",  area)
+			
+			 u = svg.selectAll(".cumulativedegreedaysline")
+				.data([data]);
+
+			 u.enter()
+				.append("path")
+				.attr("class","cumulativedegreedaysline")
+				.attr("d",  cumulativedegreedaysline(data))
+				.merge(u)
+				
+				.transition()
+				.duration(1000)
+				.attr("d",  cumulativedegreedaysline(data))
+			
+			u = svg.selectAll(".meancumulativedegreedays")
+				.data([data]);
+
+			u.enter()
+				.append("path")
+				.attr("class","meancumulativedegreedays")
+				.attr("d",  meancumulativedegreedays(data))
+				.merge(u)
+				.transition()
+				.duration(1000)
+				.attr("d",  meancumulativedegreedays(data))
+				
+				
+			u = svg.selectAll(".traceline")
+				.data([data]);
+
+			u.enter()
+				.append("line")
+				.attr("class","traceline")
+				.attr("x1", 0)  
+				.attr("y1", 0)
+				.attr("x2", 0)  
+				.merge(u)
+				.attr("y2", height)
+
+				
+			
+			xAxis.tickFormat(function(d) { return data[d]?data[d].date:"-"; });
+						
+			
+
+			svg.selectAll(".x-axis")
+			 .attr("transform", "translate(0,"+ height + ")")
+			 .call(xAxis);
+
+			svg.selectAll(".y-axis")
+			 .attr("transform", "translate(0,0)")
+			 .call(yAxis);
+				
+			
+
+			
+		}
+		
+		return {
+			"loadRemoteData":loadRemoteData
+		}
+	});
+  
+	
+  </script>
+ 
+  
+</head>
+<body>
+ 
+ <!--General sample code header -->
+ <div class="header">
+	<h3>Degree Day Sample</h3>
+	<div class="sampledesc">
+	<span>This sample requres an Weather API key to request new data. <a href="https://www.visualcrossing.com/weather/weather-data-services" target="_blank">Sign up for a key</a>
+	<span><a href="https://www.visualcrossing.com/weather-data" target="_blank">More information on the weather API</a></span>
+	</div>
+	<div class="controls disableonload">
+	
+
+	
+		<div><input type="text" class="location" placeholder="Enter address" value=""/></div>
+		<div><input type="text" class="degreeDayStartDate" placeholder="degreeDayStartDate" value=""/></div>
+		<div><input type="text" class="degreeDayEndDate" placeholder="degreeDayEndDate" value=""/></div>
+		<div><input type="text" class="degreeDayTempFix" placeholder="degreeDayTempFix" value=""/></div>
+		<div><input type="text" class="degreeDayTempMaxThreshold" placeholder="degreeDayTempMaxThreshold" value=""/></div>
+		<div><input type="text" class="degreeDayTempBase" placeholder="degreeDayTempBase" value=""/></div>
+		<div><input type="text" class="minYear" placeholder="minYear" value=""/></div>
+		<div><input type="text" class="degreeDayFocusYear" placeholder="degreeDayFocusYear" value=""/></div>
+		<div><input type="checkbox" class="degreeDayStats" checked="1"/>degreeDayStats</div>
+		<div><input type="checkbox" class="degreeDayInverse"  />degreeDayInverse</div>
+		
+		<div>
+			unitGroup 
+		</div>
+		<div>
+			<select class="unitGroup">
+				<option value="us">us</option>
+				<option value="metric">metric</option>
+				<option value="uk">uk</option>
+				<option value="base">base</option>
+			</select>
+		</div>
+		
+		
+		<div  class="padleft">
+			Weather API key
+		</div>
+		<div><input type="text" class="key"  placeholder="Enter your api key"  value=""/> </div>
+		<div>
+			<button class="refreshButton hideonloading">Refresh</button>
+			<span class="showonloading">Loading...</span>
+		</div>
+		
+	</div>
+	<div>
+		<span>Request URL:</span>
+		<input type="text" class="uri" placeholder="Request URI" value=""/>
+	</div>
+	
+ </div>
+ <!-- Sample code output -->
+ <div>
+		 <div>
+		<h4>
+			Raw results
+		</h4>
+		<textarea class="rawresults"/> </textarea>
+			</div>
+		 <h4>
+			Chart
+		  </h4>
+		 <div class="chartContainer">
+			
+		 </div>
+	</div>
+ 
+ 
+ <script>
+	plotter();
+ </script>
+</body>
+</html>
