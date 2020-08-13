@@ -6,21 +6,21 @@ import urllib.request
 import sys
 
 # This is the core of our weather query URL
-BaseURL = 'http://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/'
+BaseURL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/'
 
 if len(sys.argv) < 4:
     print('')
-    print('Usage: FetchWeather Location Date API_KEY')
+    print('Usage: Location QueryType API_KEY FROMDATE TODATE')
     print()
-    print('  Location: Please provide a location for the weatch search.')
+    print('  Location: Please provide a location for the weather search.')
     print('    (Make sure to use quotes if the name contains spaces.)')
     print('  Date: Please specify a date in the format YYYY-MM-DD to look up weather for a specific date.')
     print('    Or use the FORECAST to look up the current weather forcast.')
     print('  API_KEY: Please specify your Visual Crossing Weather API Key')
     print('    If you don\'t already have an API Key, sign up for one at https://www.visualcrossing.com/weather-api.')
     print()
-    print('Example: FetchWeather \"Herndon, VA\" HISTORY YOUR_API_KEY 2019-01-01 2019-01-07')
-    print('Example: FetchWeather \"Beverly Hills, CA\" FORECAST YOUR_API_KEY')
+    print('Example: \"Herndon, VA\" HISTORY YOUR_API_KEY 2019-01-01 2019-01-07')
+    print('Example: \"Beverly Hills, CA\" FORECAST YOUR_API_KEY')
     print()
     sys.exit()
 
@@ -37,8 +37,9 @@ QueryType=sys.argv[2].upper()
 QueryKey = '&key=' + sys.argv[3]
 
 # Set up the date parameters for our query. Used only for historical weather data requests
-FromDateParam = sys.argv[4]
-ToDateParam = sys.argv[5]
+if len(sys.argv) >4:
+    FromDateParam = sys.argv[4]
+    ToDateParam = sys.argv[5]
 
 
 
