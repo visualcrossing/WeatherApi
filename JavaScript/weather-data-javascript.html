@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+
+<script>
+
+    var uri="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?"+
+                        "aggregateHours=24&locationMode=single&contentType=json&unitGroup=us&key=YOUR_API_KEY&locations=New York City,NY";
+
+
+    function requestXMLHttpRequest() {
+        var xhr = new XMLHttpRequest();
+        xhr.responseType = "json";
+        xhr.open('GET', uri);        xhr.send();
+
+        xhr.onload = function() {
+            if (xhr.status != 200) { 
+                console.log("XMLHttpRequest error: "+xhr.status);
+                return;
+            }
+            processWeatherData(xhr.response);
+        };
+        xhr.onerror = function() {
+            console.log("XMLHttpRequest Request failed");
+        };
+    }
+
+    function requestjQuery() {
+        $.get(uri) .done(function(rawResponse) {
+            processWeatherData(rawResponse);
+        })
+        .fail(function() {
+            console.log("jQuery Request failed");
+        });
+    }
+
+    function requestd3() {
+        d3.json(uri, function(error, rawResponse ) {
+            if (error) {
+                console.log("d3 error: "+xhr.status);
+                return;
+            }
+            processWeatherData(rawResponse);
+        });
+    }
+    function processWeatherData(response) {
+        if (!response) {
+            console.log("Empty response");
+            return;
+        }
+        if (response.errorCode>0) {
+            console.log("Error detected. errorCode="+response.errorCode+", message="+response.message);
+            return;
+        }
+        var location=response.location;
+        var values=response.location.values;
+        console.log("Location: "+location.address);
+        for (var i=0;i<values.length;i++) {
+            console.log(values[i].datetimeStr+": maxt="+values[i].maxt+", mint="+values[i].mint);
+        }
+    }
+
+</script>
+
+
+
+
+</head>
+<body>
+<p>This sample uses Javascript to retrieve weather data. See the console for the output.</p>
+<p><a href="#" onclick="requestXMLHttpRequest()">requestXMLHttpRequest</a>&nbsp;/&nbsp;<a href="#" onclick="requestjQuery()">requestjQuery</a>&nbsp;/&nbsp;<a href="#"  onclick="requestd3()">requestd3</a></P>
+</body>
+</html>
