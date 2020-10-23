@@ -15,7 +15,7 @@
 	
 	$endDateTime=extractParam($segments,4, $query_params, "todate");
 	$aggregateHours=24;
-	$apiKey="1PYNQ6AWUDJE9AFERDCHJHSXK";
+	$apiKey="YOUR_API_KEY";
 ?>
 	
 	
