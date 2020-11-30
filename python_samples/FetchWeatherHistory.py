@@ -10,7 +10,7 @@ if len(sys.argv) < 4:
     print('')
     print('Usage: FetchWeather Location Date API_KEY')
     print()
-    print('  Location: Please provide a location for the weatch search.')
+    print('  Location: Please provide a location for the weather search.')
     print('    (Make sure to use quotes if the name contains spaces.)')
     print('  Date: Please specify a date in the format YYYY-MM-DD to look up weather for a specific date.')
     print('    Or use the FORECAST to look up the current weather forcast.')
