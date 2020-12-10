@@ -19,3 +19,7 @@ python_samples: Examples of using Weather API within Python scripts
 
 excel_workbooks: Examples of using Weather Data within Microsoft Excel workbooks.
 
+PHP: Examples of using Weather API within PHP scripts
+
+NodeJs: Examples of using Weather API within Node.js scripts
+
