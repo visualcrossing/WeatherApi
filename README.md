@@ -11,15 +11,23 @@ Weather data is sourced from Visual Crossing Weather Data (see https://www.visua
 
 Samples contents:
 
-D3_samples: D3 (https://d3js.org/) visualization framework samples (within a HTML/Javascript environment).
+d3_samples: D3 (https://d3js.org/) visualization framework samples (within a HTML/Javascript environment).
 
 html_samples: HTML and Javascript based examples of using the Weather APIs.
 
 python_samples: Examples of using Weather API within Python scripts
 
-excel_workbooks: Examples of using Weather Data within Microsoft Excel workbooks.
+Excel_Workbooks: Examples of using Weather Data within Microsoft Excel workbooks.
 
 PHP: Examples of using Weather API within PHP scripts
 
 NodeJs: Examples of using Weather API within Node.js scripts
+
+Java:  Examples of using Weather API within Java applications.
+
+JavaScript: Examples of using Weather API within JavaScript applications (also see our Node.js and d3 examples).
+
+PowerQuery: Examples of using Weather API in Microsoft PowerQuery scripts (within Excel, PowerBI etc).
+
+RaspberryPi:  Examples of using Weather API in Raspberry PI.
 
