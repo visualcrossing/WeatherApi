@@ -1,0 +1,71 @@
+
+ html,
+ body {
+
+ }
+
+
+ .vc-history-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.vc-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    margin:2px 2px;
+    border:1px solid lightgrey;
+    border-radius:3px;
+}
+.vc-history-contents  .vc-element .title {
+    color:darkgrey;
+    font-size:0.9em;
+}
+.vc-history-contents  .vc-element .value {
+    font-size:1.3em;
+    font-weight: bold;
+}
+.vc-forecast-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.vc-forecast-contents  .vc-element .vc-max {
+    font-size:1.2em;
+}
+.vc-forecast-contents  .vc-element .vc-min {
+    color:darkgrey;
+    font-size:1.0em;
+}
+.vc-forecast-contents  .vc-element .vc-precip {
+    font-size:1.0em;
+}
+.vc-forecast-contents  .vc-element .vc-date {
+    color:darkgrey;
+    font-size:0.9em;
+}
+
+.vc-flex-vertical {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.vc-margin-top {
+    margin-top: 20px;
+}
+.vc-padding-top {
+    padding-top: 20px;
+}
+.vc-small {
+    font-size: 0.8em;
+}
+
+.vc-center {
+    text-align: center;
+}

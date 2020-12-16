@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VIsual Crossing Weather Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- For more information on Office UI Fabric, visit https://developer.microsoft.com/fabric. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m  ms-Fabric">
+    <!--<header class="">
+        <h1 class="">Visual Crossing Weather</h1>
+    </header>
+     -->
+    <section id="sideload-msg" class="">
+        <h2 class="">Please sideload your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="vc-flex-vertical" style="display: none;">
+        <h2 class="vc-history-title vc-center">Weather history</h2>
+        <div class="vc-history-contents vc-wx"></div>
+        <h2 class="vc-center">15-Day Weather forecast</h2>
+        <div class="vc-forecast-contents"></div>
+
+        <h3 class="vc-center">Location details</h3>
+        <input type="text" class="vc-address-input" placeholder="Enter address" />
+        <div class="vc-small">Enter an address for location</div>
+        <input type="text" class="vc-date-input vc-margin-top" placeholder="Enter date" />
+        <div class="vc-small">Enter an date for retrieving data</div>
+    </main>
+</body>
+</html>
