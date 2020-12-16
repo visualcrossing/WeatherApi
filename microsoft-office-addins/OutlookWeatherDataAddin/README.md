@@ -1,3 +1,5 @@
+How to show weather data in an Outlook add-in
 
+Sample Outlook Task Pane Add-in Using the Visual Crossing Weather API.
 
-Copyright (c) 2019 Microsoft Corporation. All rights reserved.
+For more information, see: ://www.visualcrossing.com/resources/documentation/weather-api/how-to-show-weather-data-in-an-outlook-add-in/
