@@ -1,0 +1,72 @@
+sky	Sky cover
+wdir	Wind direction
+temp	Temperature
+dew	Dew Point
+humidity	Relative Humidity
+heatindex	Heat Index
+maxt	Maximum Temperature
+mint	Minimum Temperature
+wspd	Wind Speed
+wgust	Wind Gust
+wdir	Wind Direction
+precip	Precipitation
+estprecip	Estimated precipitation
+precipcover	Precipitation Cover
+visibility	Visibility
+cloudcover	Cloud Cover
+latlon	Latitude & Longitude
+address	Address
+sealevelpressure	Sea Level Pressure
+stationdistance	Mean Station Distance
+pop	Chance Precipitation (%)
+snow	Snow
+snowdepth	Snow Depth
+windchill	Wind Chill
+solarradiation	Solar Radiation
+solarenergy	Solar Energy
+sunshine	Sunshine
+stationInfo	Contributing Stations
+weatherType	Weather Type
+type_1	Blowing Or Drifting Snow
+type_2	Drizzle
+type_3	Heavy Drizzle
+type_4	Light Drizzle
+type_5	Heavy Drizzle/Rain
+type_6	Light Drizzle/Rain
+type_7	Duststorm
+type_8	Fog
+type_9	Freezing Drizzle/Freezing Rain
+type_10	Heavy Freezing Drizzle/Freezing Rain
+type_11	Light Freezing Drizzle/Freezing Rain
+type_12	Freezing Fog
+type_13	Heavy Freezing Rain
+type_14	Light Freezing Rain
+type_15	Funnel Cloud/Tornado
+type_16	Hail Showers
+type_17	Ice
+type_18	Lightning Without Thunder
+type_19	Mist
+type_20	Precipitation In Vicinity
+type_21	Rain
+type_22	Heavy Rain And Snow
+type_23	Light Rain And Snow
+type_24	Rain Showers
+type_25	Heavy Rain
+type_26	Light Rain
+type_27	Sky Coverage Decreasing
+type_28	Sky Coverage Increasing
+type_29	Sky Unchanged
+type_30	Smoke Or Haze
+type_31	Snow
+type_32	Snow And Rain Showers
+type_33	Snow Showers
+type_34	Heavy Snow
+type_35	Light Snow
+type_36	Squalls
+type_37	Thunderstorm
+type_38	Thunderstorm Without Precipitation
+type_39	Diamond Dust
+type_40	Hail
+type_41	Overcast
+type_42	Partially cloudy
+type_43	Clear

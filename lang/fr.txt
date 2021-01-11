@@ -1,0 +1,72 @@
+sky	Couverture de ciel	Sky cover
+wdir	Direction du vent	Wind direction
+temp	Température	Temperature
+dew	Point de rosée	Dew Point
+humidity	Humidité relative	Relative Humidity
+heatindex	Indice de chaleur	Heat Index
+maxt	Température maximale	Maximum Temperature
+mint	Température minimale	Minimum Temperature
+wspd	Vitesse du vent	Wind Speed
+wgust	Rafale de vent	Wind Gust
+wdir	Direction du vent	Wind Direction
+precip	Précipitation	Precipitation
+estprecip	Précipitations estimées	Estimated precipitation
+precipcover	Couverture de précipitations	Precipitation Cover
+visibility	Visibilité	Visibility
+cloudcover	Couverture nuageuse	Cloud Cover
+latlon	Latitude Longitude	Latitude & Longitude
+address	Adresse	Address
+sealevelpressure	Pression au niveau de la mer	Sea Level Pressure
+stationdistance	Distance moyenne de la station	Mean Station Distance
+pop	Précipitations aléatoires (%)	Chance Precipitation (%)
+snow	Neige	Snow
+snowdepth	Profondeur de neige	Snow Depth
+windchill	Refroidissement éolien	Wind Chill
+solarradiation	Radiation solaire	Solar Radiation
+solarenergy	Énergie solaire	Solar Energy
+sunshine	Ensoleillement	Sunshine
+stationInfo	Stations contributrices	Contributing Stations
+weatherType	Type de temps	Weather Type
+type_1	Poudrerie ou neige à la dérive	Blowing Or Drifting Snow
+type_2	Bruine	Drizzle
+type_3	Bruine lourde	Heavy Drizzle
+type_4	Bruine légère	Light Drizzle
+type_5	Forte bruine / pluie	Heavy Drizzle/Rain
+type_6	Légère bruine / pluie	Light Drizzle/Rain
+type_7	Tempête de poussière	Duststorm
+type_8	Brouillard	Fog
+type_9	Bruine verglaçante / Pluie verglaçante	Freezing Drizzle/Freezing Rain
+type_10	Forte bruine verglaçante / pluie verglaçante	Heavy Freezing Drizzle/Freezing Rain
+type_11	Légère bruine verglaçante / pluie verglaçante	Light Freezing Drizzle/Freezing Rain
+type_12	Brouillard verglaçant	Freezing Fog
+type_13	Forte pluie verglaçante	Heavy Freezing Rain
+type_14	Légère pluie verglaçante	Light Freezing Rain
+type_15	Nuage d'entonnoir / Tornade	Funnel Cloud/Tornado
+type_16	Douches de grêle	Hail Showers
+type_17	La glace	Ice
+type_18	Foudre sans tonnerre	Lightning Without Thunder
+type_19	Brouillard	Mist
+type_20	Précipitations à proximité	Precipitation In Vicinity
+type_21	Pluie	Rain
+type_22	Forte pluie et neige	Heavy Rain And Snow
+type_23	Légère pluie et neige	Light Rain And Snow
+type_24	Averses de pluie	Rain Showers
+type_25	Forte pluie	Heavy Rain
+type_26	Pluie légère	Light Rain
+type_27	Couverture du ciel en baisse	Sky Coverage Decreasing
+type_28	Augmentation de la couverture du ciel	Sky Coverage Increasing
+type_29	Ciel inchangé	Sky Unchanged
+type_30	Fumée ou brume	Smoke Or Haze
+type_31	Neige	Snow
+type_32	Averses de neige et de pluie	Snow And Rain Showers
+type_33	Douches de neige	Snow Showers
+type_34	Beaucoup de neige	Heavy Snow
+type_35	Neige légère	Light Snow
+type_36	Grains	Squalls
+type_37	Orage	Thunderstorm
+type_38	Orage sans précipitations	Thunderstorm Without Precipitation
+type_39	La poussière de diamant	Diamond Dust
+type_40	Saluer	Hail
+type_41	Couvert	Overcast
+type_42	Partiellement nuageux	Partially cloudy
+type_43	Clair	Clear

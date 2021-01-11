@@ -1,0 +1,72 @@
+sky	Cubierta del cielo	Sky cover
+wdir	Dirección del viento	Wind direction
+temp	Temperatura	Temperature
+dew	Punto de rocío	Dew Point
+humidity	Humedad relativa	Relative Humidity
+heatindex	Índice de calor	Heat Index
+maxt	Temperatura máxima	Maximum Temperature
+mint	Temperatura mínima	Minimum Temperature
+wspd	Velocidad del viento	Wind Speed
+wgust	Ráfaga de viento	Wind Gust
+wdir	Dirección del viento	Wind Direction
+precip	Precipitación	Precipitation
+estprecip	Precipitación estimada	Estimated precipitation
+precipcover	Cubierta de precipitación	Precipitation Cover
+visibility	Visibilidad	Visibility
+cloudcover	Cubierto de nubes	Cloud Cover
+latlon	Latitud longitud	Latitude & Longitude
+address	Habla a	Address
+sealevelpressure	Presión a nivel del mar	Sea Level Pressure
+stationdistance	Distancia media de la estación	Mean Station Distance
+pop	Probabilidad de precipitación (%)	Chance Precipitation (%)
+snow	Nieve	Snow
+snowdepth	Profundidad de la nieve	Snow Depth
+windchill	Escalofríos	Wind Chill
+solarradiation	Radiación solar	Solar Radiation
+solarenergy	Energía solar	Solar Energy
+sunshine	Brillo Solar	Sunshine
+stationInfo	Estaciones contribuyentes	Contributing Stations
+weatherType	Tipo de clima	Weather Type
+type_1	Nieve que sopla o a la deriva	Blowing Or Drifting Snow
+type_2	Llovizna	Drizzle
+type_3	Llovizna fuerte	Heavy Drizzle
+type_4	Llovizna ligera	Light Drizzle
+type_5	Fuerte llovizna / lluvia	Heavy Drizzle/Rain
+type_6	Llovizna ligera / Lluvia	Light Drizzle/Rain
+type_7	Tormenta de arena	Duststorm
+type_8	Niebla	Fog
+type_9	Llovizna helada / Lluvia helada	Freezing Drizzle/Freezing Rain
+type_10	Fuerte llovizna helada / lluvia helada	Heavy Freezing Drizzle/Freezing Rain
+type_11	Llovizna helada ligera / lluvia helada	Light Freezing Drizzle/Freezing Rain
+type_12	Niebla helada	Freezing Fog
+type_13	Lluvia helada intensa	Heavy Freezing Rain
+type_14	Lluvia helada ligera	Light Freezing Rain
+type_15	Nube de embudo / Tornado	Funnel Cloud/Tornado
+type_16	Lluvias de granizo	Hail Showers
+type_17	Hielo	Ice
+type_18	Rayo sin trueno	Lightning Without Thunder
+type_19	Niebla	Mist
+type_20	Precipitación en las proximidades	Precipitation In Vicinity
+type_21	Lluvia	Rain
+type_22	Fuertes lluvias y nieve	Heavy Rain And Snow
+type_23	Lluvia ligera y nieve	Light Rain And Snow
+type_24	Lluvias	Rain Showers
+type_25	Lluvia Pesada	Heavy Rain
+type_26	Lluvia ligera	Light Rain
+type_27	Disminución de la cobertura del cielo	Sky Coverage Decreasing
+type_28	Aumento de la cobertura del cielo	Sky Coverage Increasing
+type_29	Cielo sin cambios	Sky Unchanged
+type_30	Humo o neblina	Smoke Or Haze
+type_31	Nieve	Snow
+type_32	Lluvias y nieve	Snow And Rain Showers
+type_33	Duchas de nieve	Snow Showers
+type_34	Fuertes nevadas	Heavy Snow
+type_35	Nieve ligera	Light Snow
+type_36	Chubascos	Squalls
+type_37	Tormenta	Thunderstorm
+type_38	Tormenta sin precipitaciones	Thunderstorm Without Precipitation
+type_39	Polvo de diamante	Diamond Dust
+type_40	Granizo	Hail
+type_41	Nublado	Overcast
+type_42	Parcialmente nublado	Partially cloudy
+type_43	Claro	Clear

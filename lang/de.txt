@@ -1,0 +1,72 @@
+sky	Bewölkung	Sky cover
+wdir	Windrichtung	Wind direction
+temp	Temperatur 	Temperature
+dew	Taupunkt	Dew Point
+humidity	Relative Feuchtigkeit	Relative Humidity
+heatindex	Hitze Index	Heat Index
+maxt	Höchsttemperatur	Maximum Temperature
+mint	Tiefsttemperatur	Minimum Temperature
+wspd	Windgeschwindigkeit	Wind Speed
+wgust	Windböen	Wind Gust
+wdir	Windrichtung	Wind Direction
+precip	Niederschlag 	Precipitation
+estprecip	Erwarteter Niederschlag 	Estimated precipitation
+precipcover	Niederschlagsverteilung	Precipitation Cover
+visibility	Sicht 	Visibility
+cloudcover	Bewölkungsdichte	Cloud Cover
+latlon	Längen- und Breitengrad	Latitude & Longitude
+address	Adresse	Address
+sealevelpressure	Meeresspiegeldruck	Sea Level Pressure
+stationdistance	Durchschnittliche Stationsentfernung	Mean Station Distance
+pop		Chance Precipitation (%)
+snow	Schnee	Snow
+snowdepth	Schneehöhe	Snow Depth
+windchill		Wind Chill
+solarradiation		Solar Radiation
+solarenergy		Solar Energy
+sunshine		Sunshine
+stationInfo	Beitragende Stationen	Contributing Stations
+weatherType	Wettertyp	Weather Type
+type_1	Schneeverwehungen	Blowing Or Drifting Snow
+type_2	Niesleregen	Drizzle
+type_3	Starker Niesleregen	Heavy Drizzle
+type_4	Leichter Niesleregen	Light Drizzle
+type_5	Starker Niesleregen/Regen	Heavy Drizzle/Rain
+type_6	Leichter Niesleregen/Regen	Light Drizzle/Rain
+type_7	Staubsturm	Duststorm
+type_8	Nebel	Fog
+type_9	gefrierende Niederschläge	Freezing Drizzle/Freezing Rain
+type_10	Starker gefrierender Niesleregen/gefrierender Regen	Heavy Freezing Drizzle/Freezing Rain
+type_11	Leichter gefrierender Niesleregen/gefrierender Regen	Light Freezing Drizzle/Freezing Rain
+type_12	Gefrierender Nebel	Freezing Fog
+type_13	Starker Gefrierender Regen	Heavy Freezing Rain
+type_14	Leichter Gefrierender Regen	Light Freezing Rain
+type_15	Wolkenschlauch/Tornado	Funnel Cloud/Tornado
+type_16	Hagelschauer	Hail Showers
+type_17	Eis 	Ice
+type_18	Blitze ohne Donner	Lightning Without Thunder
+type_19	Dunst	Mist
+type_20	Niederschlag 	Precipitation In Vicinity
+type_21	Regen	Rain
+type_22	Starker Regen und Schnee	Heavy Rain And Snow
+type_23	Leichter Regen und Schnee	Light Rain And Snow
+type_24	Regenschauer	Rain Showers
+type_25	Starker Regen	Heavy Rain
+type_26	Leichter Regen	Light Rain
+type_27	Abnehmende Bedeckung	Sky Coverage Decreasing
+type_28	Zuhnemende Bedeckung	Sky Coverage Increasing
+type_29	Unverändert	Sky Unchanged
+type_30	Rauch oder Hitzeflimmern	Smoke Or Haze
+type_31	Schnee	Snow
+type_32	Schnee und Regen Schauer 	Snow And Rain Showers
+type_33	Schnee Schauer	Snow Showers
+type_34	Starker Schneefall	Heavy Snow
+type_35	Leichter Schneefall	Light Snow
+type_36	Sturmbö	Squalls
+type_37	Gewitter	Thunderstorm
+type_38	Gewitter ohne Niederschlag	Thunderstorm Without Precipitation
+type_39	Polarschnee	Diamond Dust
+type_40	Hagel	Hail
+type_41	Bedeckt	Overcast
+type_42	Teilweise bewölkt	Partially cloudy
+type_43	klar	Clear
