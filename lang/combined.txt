@@ -1,0 +1,128 @@
+id	en	de	es	fr	ru
+sky	Sky cover	Bewölkung	Cubierta del cielo	Couverture de ciel	Облачно
+wdir	Wind direction	Windrichtung	Dirección del viento	Direction du vent	Направление ветра
+temp	Temperature	Temperatur 	Temperatura	Température	Температура
+dew	Dew Point	Taupunkt	Punto de rocío	Point de rosée	Точка росы
+humidity	Relative Humidity	Relative Feuchtigkeit	Humedad relativa	Humidité relative	Относительная влажность
+heatindex	Heat Index	Hitze Index	Índice de calor	Indice de chaleur	Индекс тепла
+maxt	Maximum Temperature	Höchsttemperatur	Temperatura máxima	Température maximale	Максимальная Температура
+mint	Minimum Temperature	Tiefsttemperatur	Temperatura mínima	Température minimale	Минимальная Температура
+wspd	Wind Speed	Windgeschwindigkeit	Velocidad del viento	Vitesse du vent	Скорость Ветра
+wgust	Wind Gust	Windböen	Ráfaga de viento	Rafale de vent	Порыв Ветра
+wdir	Wind Direction	Windrichtung	Dirección del viento	Direction du vent	Направление Ветра
+precip	Precipitation	Niederschlag 	Precipitación	Précipitation	Осадки
+estprecip	Estimated precipitation	Erwarteter Niederschlag 	Precipitación estimada	Précipitations estimées	Расчетное количество осадков
+precipcover	Precipitation Cover	Niederschlagsverteilung	Cubierta de precipitación	Couverture de précipitations	Покрытие осадками
+visibility	Visibility	Sicht 	Visibilidad	Visibilité	Видимость
+cloudcover	Cloud Cover	Bewölkungsdichte	Cubierto de nubes	Couverture nuageuse	Облачный покров
+latlon	Latitude & Longitude	Längen- und Breitengrad	Latitud longitud	Latitude Longitude	Широта и Долгота
+address	Address	Adresse	Habla a	Adresse	Адрес
+sealevelpressure	Sea Level Pressure	Meeresspiegeldruck	Presión a nivel del mar	Pression au niveau de la mer	
+stationdistance	Mean Station Distance	Durchschnittliche Stationsentfernung	Distancia media de la estación	Distance moyenne de la station	Среднее расстояние до станции
+pop	Chance Precipitation (%)	Zufallsniederschlag (%)	Probabilidad de precipitación (%)	Précipitations aléatoires (%)	Вероятность осадков (%)
+snow	Snow	Schnee	Nieve	Neige	Снег
+snowdepth	Snow Depth	Schneehöhe	Profundidad de la nieve	Profondeur de neige	Глубина снежного покрова
+windchill	Wind Chill	Wind Chill	Escalofríos	Refroidissement éolien	Охлаждение ветра
+solarradiation	Solar Radiation	Sonnenstrahlung	Radiación solar	Radiation solaire	Солнечная радиация
+solarenergy	Solar Energy	Solarenergie	Energía solar	Énergie solaire	Солнечная энергия
+sunshine	Sunshine	Sonnenschein	Brillo Solar	Ensoleillement	Солнечный свет
+stationInfo	Contributing Stations	Beitragende Stationen	Estaciones contribuyentes	Stations contributrices	"Станции, вносящие вклад"
+weatherType	Weather Type	Wettertyp	Tipo de clima	Type de temps	Тип погоды
+type_1	Blowing Or Drifting Snow	Schneeverwehungen	Nieve que sopla o a la deriva	Poudrerie ou neige à la dérive	Дующий или дрейфующий снег
+type_2	Drizzle	Niesleregen	Llovizna	Bruine	Моросящий дождь
+type_3	Heavy Drizzle	Starker Niesleregen	Llovizna fuerte	Bruine lourde	Сильный моросящий дождь
+type_4	Light Drizzle	Leichter Niesleregen	Llovizna ligera	Bruine légère	Легкий моросящий дождь
+type_5	Heavy Drizzle/Rain	Starker Niesleregen/Regen	Fuerte llovizna / lluvia	Forte bruine / pluie	Сильный моросящий дождь/дождь
+type_6	Light Drizzle/Rain	Leichter Niesleregen/Regen	Llovizna ligera / Lluvia	Légère bruine / pluie	Морось/дождь
+type_7	Duststorm	Staubsturm	Tormenta de arena	Tempête de poussière	Пылевая буря
+type_8	Fog	Nebel	Niebla	Brouillard	Туман
+type_9	Freezing Drizzle/Freezing Rain	gefrierende Niederschläge	Llovizna helada / Lluvia helada	Bruine verglaçante / Pluie verglaçante	Ледяная морось/ледяной дождь
+type_10	Heavy Freezing Drizzle/Freezing Rain	Starker gefrierender Niesleregen/gefrierender Regen	Fuerte llovizna helada / lluvia helada	Forte bruine verglaçante / pluie verglaçante	Сильная морось/ледяной дождь
+type_11	Light Freezing Drizzle/Freezing Rain	Leichter gefrierender Niesleregen/gefrierender Regen	Llovizna helada ligera / lluvia helada	Légère bruine verglaçante / pluie verglaçante	Легкая морось/ледяной дождь
+type_12	Freezing Fog	Gefrierender Nebel	Niebla helada	Brouillard verglaçant	Ледяной туман
+type_13	Heavy Freezing Rain	Starker Gefrierender Regen	Lluvia helada intensa	Forte pluie verglaçante	Сильный ледяной дождь
+type_14	Light Freezing Rain	Leichter Gefrierender Regen	Lluvia helada ligera	Légère pluie verglaçante	Небольшой ледяной дождь
+type_15	Funnel Cloud/Tornado	Wolkenschlauch/Tornado	Nube de embudo / Tornado	Nuage d'entonnoir / Tornade	Воронкообразное облако/Торнадо
+type_16	Hail Showers	Hagelschauer	Lluvias de granizo	Douches de grêle	Ливни
+type_17	Ice	Eis 	Hielo	La glace	Лёд
+type_18	Lightning Without Thunder	Blitze ohne Donner	Rayo sin trueno	Foudre sans tonnerre	Молния без грома
+type_19	Mist	Dunst	Niebla	Brouillard	Туман
+type_20	Precipitation In Vicinity	Niederschlag 	Precipitación en las proximidades	Précipitations à proximité	Осадки в окрестностях
+type_21	Rain	Regen	Lluvia	Pluie	Дождь
+type_22	Heavy Rain And Snow	Starker Regen und Schnee	Fuertes lluvias y nieve	Forte pluie et neige	Сильный Дождь и Снег
+type_23	Light Rain And Snow	Leichter Regen und Schnee	Lluvia ligera y nieve	Légère pluie et neige	Лёгкий Дождь и Снег
+type_24	Rain Showers	Regenschauer	Lluvias	Averses de pluie	Обильный Дождь
+type_25	Heavy Rain	Starker Regen	Lluvia Pesada	Forte pluie	Сильный Дождь
+type_26	Light Rain	Leichter Regen	Lluvia ligera	Pluie légère	Лёгкий Дождь
+type_27	Sky Coverage Decreasing	Abnehmende Bedeckung	Disminución de la cobertura del cielo	Couverture du ciel en baisse	Облачность уменьшается
+type_28	Sky Coverage Increasing	Zuhnemende Bedeckung	Aumento de la cobertura del cielo	Augmentation de la couverture du ciel	Облачность увеличивается
+type_29	Sky Unchanged	Unverändert	Cielo sin cambios	Ciel inchangé	Небо без изменений
+type_30	Smoke Or Haze	Rauch oder Hitzeflimmern	Humo o neblina	Fumée ou brume	Дым
+type_31	Snow	Schnee	Nieve	Neige	Снег
+type_32	Snow And Rain Showers	Schnee und Regen Schauer 	Lluvias y nieve	Averses de neige et de pluie	Обильные Снег и Дождь
+type_33	Snow Showers	Schnee Schauer	Duchas de nieve	Douches de neige	Обильный снег
+type_34	Heavy Snow	Starker Schneefall	Fuertes nevadas	Beaucoup de neige	Снегопад
+type_35	Light Snow	Leichter Schneefall	Nieve ligera	Neige légère	Небольшой снег
+type_36	Squalls	Sturmbö	Chubascos	Grains	Шквал
+type_37	Thunderstorm	Gewitter	Tormenta	Orage	Гроза
+type_38	Thunderstorm Without Precipitation	Gewitter ohne Niederschlag	Tormenta sin precipitaciones	Orage sans précipitations	Гроза без осадков
+type_39	Diamond Dust	Polarschnee	Polvo de diamante	La poussière de diamant	Ясное небо с мелкими осадками
+type_40	Hail	Hagel	Granizo	Saluer	Град
+type_41	Overcast	Bedeckt	Nublado	Couvert	Пасмурная погода
+type_42	Partially cloudy	Teilweise bewölkt	Parcialmente nublado	Partiellement nuageux	Частично облачно
+type_43	Clear	klar	Claro	Clair	Ясно
+warmingup	warming up	Aufwärmen	calentando	échauffement	
+coolingdown	cooling down	Abkühlung	enfriándose	retour au calme	
+similartemp	similar temperatures continuing	ähnliche Temperaturen setzen sich fort	temperaturas similares continúan	températures similaires se poursuivant	
+raindays	a chance of rain 	eine Chance von Regen auf 	una posibilidad de lluvia en 	une chance de pluie 	
+snowdays	a chance of snow 	eine Chance auf Schnee 	una posibilidad de nieve en 	une chance de neige 	
+norain	no rain expected	Kein Regen erwartet	no se espera lluvia	aucune pluie prévue	
+mostdays	multiple days	mehrere Tage	varios dias	plusieurs jours	
+rainallday	a chance of rain throughout the day	Regenwahrscheinlichkeit den ganzen Tag	posibilidad de lluvia durante todo el día	un risque de pluie toute la journée	
+rainclearinglater	rain clearing later	Regen klärt sich später	lluvia aclarando más tarde	la pluie se dégage plus tard	
+rainpm	afternoon rain	Nachmittagsregen	lluvia de la tarde	pluie de l'après-midi	
+rainam	morning rain	Morgenregen	lluvia de la mañana	lluvia temprano en la mañanapluie du matin	
+rainearlyam	early morning rain	frühmorgendlicher Regen	lluvia temprano en la mañana	pluie tôt le matin	
+rainlatepm	late afternoon rain	Regen am späten Nachmittag	lluvia al final de la tarde	pluie de fin d'après-midi	
+rainampm	rain in the morning and afternoon	morgens und nachmittags regnet es	lluvia por la mañana y por la tarde	pluie le matin et l'après-midi	
+rainchance	a chance of rain	eine Chance von Regen	posibilidad de lluvia	une chance de pluie	
+raindefinite	rain	Regen	lluvia	pluie	
+snowallday	a chance of snow throughout the day	eine Chance von Schnee den ganzen Tag	posibilidad de nieve durante todo el día	une chance de neige tout au long de la journée	
+snowclearinglater	snow clearing later	Schneeräumung später	limpieza de nieve más tarde	neige diminuant plus tard	
+snowpm	afternoon snow	Nachmittagsschnee	nieve de la tarde	neige l'après-midi	
+snowam	morning snow	Morgenschnee	nieve de la mañana	neige du matin	
+snowearlyam	early morning snow	Schnee am frühen Morgen	nieve temprano en la mañana	neige tôt le matin	
+snowlatepm	late afternoon snow	Schnee am späten Nachmittag	nieve al final de la tarde	neige en fin d'après-midi	
+snowampm	snow in the morning and afternoon	morgens und nachmittags schnee	nieve por la mañana y por la tarde	neige le matin et l'après-midi	
+snowchance	a chance of snow	eine Chance auf Schnee	una posibilidad de nieve	une chance de neige	
+snowdefinite	snow	Schnee	nieve	neige	
+rainsnowallday	a chance of rain or snow throughout the day	eine Chance von Regen oder Schnee während des Tages	posibilidad de lluvia o nieve durante el día	un risque de pluie ou de neige tout au long de la journée	
+rainsnowclearinglater	rain or snow clearing later	Regen- oder Schneeräumung später	lluvia o nieve aclarando más tarde	pluie ou neige diminuant plus tard	
+rainsnowpm	afternoon rain or snow	Nachmittags Regen oder Schnee	tarde lluvia o nieve	pluie ou neige l'après-midi	
+rainsnowam	morning rain or snow	Morgenregen oder Schnee	mañana lluvia o nieve	pluie ou neige le matin	
+rainsnowearlyam	early morning snow or rain	Schnee am frühen Morgen	nieve temprano en la mañana	neige tôt le matin	
+rainsnowlatepm	late afternoon rain or snow	Regen oder Schnee am späten Nachmittag	lluvia o nieve al final de la tarde	pluie ou neige en fin d'après-midi	
+rainsnowampm	rain or snow in the morning and afternoon	morgens und nachmittags Regen oder Schnee	lluvia o nieve por la mañana y por la tarde	pluie ou neige le matin et l'après-midi	
+rainsnowchance	a chance of rain or snow	eine Chance von Regen oder Schnee	posibilidad de lluvia o nieve	un risque de pluie ou de neige	
+rainsnowdefinite	rain or snow	Regen oder Schnee	lluvia o nieve	pluie ou de neige	
+clear	clear conditions throughout the day	klare Bedingungen	condiciones claras	conditions claires	
+overcast	cloudy skies throughout the day	wolkige Himmel	cielos nublados	ciel nuageux	
+cloudierpm	becoming cloudy in the afternoon	Nachmittags wird es bewölkt	volviéndose nublado por la tarde	devenant nuageux l'après-midi	
+clearingpm	clearing in the afternoon	Nachmittags Lichtung	aclarando por la tarde	compensation l'après-midi	
+variablecloud	partly cloudy throughout the day	teilweise bewölkt	parcialmente nublado	Partiellement nuageux	
+stormsstrong	strong storms possible	starke Stürme möglich	posibles tormentas fuertes	fortes tempêtes possibles	
+stormspossible	storms possible	Stürme möglich	tormentas posibles	tempêtes possibles	
+skytempprecip	%s and %s with %s.	%s und %s mit %s.	%s y %s con %s.	%s et %s avec %s.	
+skyprecip	%s with %s.	%s mit %s.	%s con %s.	%s avec %s.	
+sky	%s.	%s.	%s.	%s.	
+tempprecipweek	%s with %s.	%s mit %s.	%s con %s.	%s avec %s.	
+tempweek	%s.	%s.	%s.	%s.	
+dow1	Monday	Montag	lunes	lundi	
+dow2	Tuesday	Dienstag	martes	mardi	
+dow3	Wednesday	Mittwoch	miércoles	mercredi	
+dow4	Thursday	Donnerstag	jueves	jeudi	
+dow5	Friday	Freitag	viernes	vendredi	
+dow6	Saturday	Samstag	sábado	samedi	
+dow7	Sunday	Sonntag	domingo	dimanche	
+today	today	heute	hoy	aujourd'hui	
+tomorrow	tomorrow	Morgen	mañana	demain	
