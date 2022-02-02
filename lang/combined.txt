@@ -17,7 +17,7 @@ visibility	Visibility	Sicht 	Visibilidad	Visibilité	Видимость
 cloudcover	Cloud Cover	Bewölkungsdichte	Cubierto de nubes	Couverture nuageuse	Облачный покров
 latlon	Latitude & Longitude	Längen- und Breitengrad	Latitud longitud	Latitude Longitude	Широта и Долгота
 address	Address	Adresse	Habla a	Adresse	Адрес
-sealevelpressure	Sea Level Pressure	Meeresspiegeldruck	Presión a nivel del mar	Pression au niveau de la mer	
+sealevelpressure	Sea Level Pressure	Meeresspiegeldruck	Presión a nivel del mar	Pression au niveau de la mer	Давление на уровне моря
 stationdistance	Mean Station Distance	Durchschnittliche Stationsentfernung	Distancia media de la estación	Distance moyenne de la station	Среднее расстояние до станции
 pop	Chance Precipitation (%)	Zufallsniederschlag (%)	Probabilidad de precipitación (%)	Précipitations aléatoires (%)	Вероятность осадков (%)
 snow	Snow	Schnee	Nieve	Neige	Снег
@@ -71,58 +71,58 @@ type_40	Hail	Hagel	Granizo	Saluer	Град
 type_41	Overcast	Bedeckt	Nublado	Couvert	Пасмурная погода
 type_42	Partially cloudy	Teilweise bewölkt	Parcialmente nublado	Partiellement nuageux	Частично облачно
 type_43	Clear	klar	Claro	Clair	Ясно
-warmingup	warming up	Aufwärmen	calentando	échauffement	
-coolingdown	cooling down	Abkühlung	enfriándose	retour au calme	
-similartemp	similar temperatures continuing	ähnliche Temperaturen setzen sich fort	temperaturas similares continúan	températures similaires se poursuivant	
-raindays	a chance of rain 	eine Chance von Regen auf 	una posibilidad de lluvia en 	une chance de pluie 	
-snowdays	a chance of snow 	eine Chance auf Schnee 	una posibilidad de nieve en 	une chance de neige 	
-norain	no rain expected	Kein Regen erwartet	no se espera lluvia	aucune pluie prévue	
-mostdays	multiple days	mehrere Tage	varios dias	plusieurs jours	
-rainallday	a chance of rain throughout the day	Regenwahrscheinlichkeit den ganzen Tag	posibilidad de lluvia durante todo el día	un risque de pluie toute la journée	
-rainclearinglater	rain clearing later	Regen klärt sich später	lluvia aclarando más tarde	la pluie se dégage plus tard	
-rainpm	afternoon rain	Nachmittagsregen	lluvia de la tarde	pluie de l'après-midi	
-rainam	morning rain	Morgenregen	lluvia de la mañana	lluvia temprano en la mañanapluie du matin	
-rainearlyam	early morning rain	frühmorgendlicher Regen	lluvia temprano en la mañana	pluie tôt le matin	
-rainlatepm	late afternoon rain	Regen am späten Nachmittag	lluvia al final de la tarde	pluie de fin d'après-midi	
-rainampm	rain in the morning and afternoon	morgens und nachmittags regnet es	lluvia por la mañana y por la tarde	pluie le matin et l'après-midi	
-rainchance	a chance of rain	eine Chance von Regen	posibilidad de lluvia	une chance de pluie	
-raindefinite	rain	Regen	lluvia	pluie	
-snowallday	a chance of snow throughout the day	eine Chance von Schnee den ganzen Tag	posibilidad de nieve durante todo el día	une chance de neige tout au long de la journée	
-snowclearinglater	snow clearing later	Schneeräumung später	limpieza de nieve más tarde	neige diminuant plus tard	
-snowpm	afternoon snow	Nachmittagsschnee	nieve de la tarde	neige l'après-midi	
-snowam	morning snow	Morgenschnee	nieve de la mañana	neige du matin	
-snowearlyam	early morning snow	Schnee am frühen Morgen	nieve temprano en la mañana	neige tôt le matin	
-snowlatepm	late afternoon snow	Schnee am späten Nachmittag	nieve al final de la tarde	neige en fin d'après-midi	
-snowampm	snow in the morning and afternoon	morgens und nachmittags schnee	nieve por la mañana y por la tarde	neige le matin et l'après-midi	
-snowchance	a chance of snow	eine Chance auf Schnee	una posibilidad de nieve	une chance de neige	
-snowdefinite	snow	Schnee	nieve	neige	
-rainsnowallday	a chance of rain or snow throughout the day	eine Chance von Regen oder Schnee während des Tages	posibilidad de lluvia o nieve durante el día	un risque de pluie ou de neige tout au long de la journée	
-rainsnowclearinglater	rain or snow clearing later	Regen- oder Schneeräumung später	lluvia o nieve aclarando más tarde	pluie ou neige diminuant plus tard	
-rainsnowpm	afternoon rain or snow	Nachmittags Regen oder Schnee	tarde lluvia o nieve	pluie ou neige l'après-midi	
-rainsnowam	morning rain or snow	Morgenregen oder Schnee	mañana lluvia o nieve	pluie ou neige le matin	
-rainsnowearlyam	early morning snow or rain	Schnee am frühen Morgen	nieve temprano en la mañana	neige tôt le matin	
-rainsnowlatepm	late afternoon rain or snow	Regen oder Schnee am späten Nachmittag	lluvia o nieve al final de la tarde	pluie ou neige en fin d'après-midi	
-rainsnowampm	rain or snow in the morning and afternoon	morgens und nachmittags Regen oder Schnee	lluvia o nieve por la mañana y por la tarde	pluie ou neige le matin et l'après-midi	
-rainsnowchance	a chance of rain or snow	eine Chance von Regen oder Schnee	posibilidad de lluvia o nieve	un risque de pluie ou de neige	
-rainsnowdefinite	rain or snow	Regen oder Schnee	lluvia o nieve	pluie ou de neige	
-clear	clear conditions throughout the day	klare Bedingungen	condiciones claras	conditions claires	
-overcast	cloudy skies throughout the day	wolkige Himmel	cielos nublados	ciel nuageux	
-cloudierpm	becoming cloudy in the afternoon	Nachmittags wird es bewölkt	volviéndose nublado por la tarde	devenant nuageux l'après-midi	
-clearingpm	clearing in the afternoon	Nachmittags Lichtung	aclarando por la tarde	compensation l'après-midi	
-variablecloud	partly cloudy throughout the day	teilweise bewölkt	parcialmente nublado	Partiellement nuageux	
-stormsstrong	strong storms possible	starke Stürme möglich	posibles tormentas fuertes	fortes tempêtes possibles	
-stormspossible	storms possible	Stürme möglich	tormentas posibles	tempêtes possibles	
-skytempprecip	%s and %s with %s.	%s und %s mit %s.	%s y %s con %s.	%s et %s avec %s.	
-skyprecip	%s with %s.	%s mit %s.	%s con %s.	%s avec %s.	
-sky	%s.	%s.	%s.	%s.	
-tempprecipweek	%s with %s.	%s mit %s.	%s con %s.	%s avec %s.	
-tempweek	%s.	%s.	%s.	%s.	
-dow1	Monday	Montag	lunes	lundi	
-dow2	Tuesday	Dienstag	martes	mardi	
-dow3	Wednesday	Mittwoch	miércoles	mercredi	
-dow4	Thursday	Donnerstag	jueves	jeudi	
-dow5	Friday	Freitag	viernes	vendredi	
-dow6	Saturday	Samstag	sábado	samedi	
-dow7	Sunday	Sonntag	domingo	dimanche	
-today	today	heute	hoy	aujourd'hui	
-tomorrow	tomorrow	Morgen	mañana	demain	
+warmingup	warming up	Aufwärmen	calentando	échauffement	потепление
+coolingdown	cooling down	Abkühlung	enfriándose	retour au calme	похолодание
+similartemp	similar temperatures continuing	ähnliche Temperaturen setzen sich fort	temperaturas similares continúan	températures similaires se poursuivant	одинаковая температура
+raindays	a chance of rain 	eine Chance von Regen auf 	una posibilidad de lluvia en 	une chance de pluie 	вероятность дождя
+snowdays	a chance of snow 	eine Chance auf Schnee 	una posibilidad de nieve en 	une chance de neige 	вероятность снега
+norain	no rain expected	Kein Regen erwartet	no se espera lluvia	aucune pluie prévue	дождя не ожидается
+mostdays	multiple days	mehrere Tage	varios dias	plusieurs jours	несколько дней
+rainallday	a chance of rain throughout the day	Regenwahrscheinlichkeit den ganzen Tag	posibilidad de lluvia durante todo el día	un risque de pluie toute la journée	вероятность дождя в течение дня
+rainclearinglater	rain clearing later	Regen klärt sich später	lluvia aclarando más tarde	la pluie se dégage plus tard	дождь скоро закончится
+rainpm	afternoon rain	Nachmittagsregen	lluvia de la tarde	pluie de l'après-midi	дождь со второй половины дня
+rainam	morning rain	Morgenregen	lluvia de la mañana	lluvia temprano en la mañanapluie du matin	возможен дождь утром
+rainearlyam	early morning rain	frühmorgendlicher Regen	lluvia temprano en la mañana	pluie tôt le matin	ранний утренний дождь
+rainlatepm	late afternoon rain	Regen am späten Nachmittag	lluvia al final de la tarde	pluie de fin d'après-midi	возможен дождь ближе к вечеру
+rainampm	rain in the morning and afternoon	morgens und nachmittags regnet es	lluvia por la mañana y por la tarde	pluie le matin et l'après-midi	дождь утром и днем
+rainchance	a chance of rain	eine Chance von Regen	posibilidad de lluvia	une chance de pluie	вероятность дождя
+raindefinite	rain	Regen	lluvia	pluie	дождь
+snowallday	a chance of snow throughout the day	eine Chance von Schnee den ganzen Tag	posibilidad de nieve durante todo el día	une chance de neige tout au long de la journée	вероятность снега в течение дня
+snowclearinglater	snow clearing later	Schneeräumung später	limpieza de nieve más tarde	neige diminuant plus tard	снег пройдёт позже
+snowpm	afternoon snow	Nachmittagsschnee	nieve de la tarde	neige l'après-midi	послеполуденный снег
+snowam	morning snow	Morgenschnee	nieve de la mañana	neige du matin	утренний снег
+snowearlyam	early morning snow	Schnee am frühen Morgen	nieve temprano en la mañana	neige tôt le matin	ранний утренний снег
+snowlatepm	late afternoon snow	Schnee am späten Nachmittag	nieve al final de la tarde	neige en fin d'après-midi	снего возможен вечером
+snowampm	snow in the morning and afternoon	morgens und nachmittags schnee	nieve por la mañana y por la tarde	neige le matin et l'après-midi	снег утром и днем
+snowchance	a chance of snow	eine Chance auf Schnee	una posibilidad de nieve	une chance de neige 	большая вероятность снега
+snowdefinite	snow	Schnee	nieve	neige	снег
+rainsnowallday	a chance of rain or snow throughout the day	eine Chance von Regen oder Schnee während des Tages	posibilidad de lluvia o nieve durante el día	un risque de pluie ou de neige tout au long de la journée	вероятность дождя или снега
+rainsnowclearinglater	rain or snow clearing later	Regen- oder Schneeräumung später	lluvia o nieve aclarando más tarde	pluie ou neige diminuant plus tard	дождь или снег пройдёт позже
+rainsnowpm	afternoon rain or snow	Nachmittags Regen oder Schnee	tarde lluvia o nieve	pluie ou neige l'après-midi	послеобеденный дождь или снег
+rainsnowam	morning rain or snow	Morgenregen oder Schnee	mañana lluvia o nieve	pluie ou neige le matin	возможен снег или дождь утром
+rainsnowearlyam	early morning snow or rain	Schnee am frühen Morgen	nieve temprano en la mañana	neige tôt le matin	ранним утром снег или дождь
+rainsnowlatepm	late afternoon rain or snow	Regen oder Schnee am späten Nachmittag	lluvia o nieve al final de la tarde	pluie ou neige en fin d'après-midi	дождь или снег поздним вечером
+rainsnowampm	rain or snow in the morning and afternoon	morgens und nachmittags Regen oder Schnee	lluvia o nieve por la mañana y por la tarde	pluie ou neige le matin et l'après-midi	дождь или снег утром и днем
+rainsnowchance	a chance of rain or snow	eine Chance von Regen oder Schnee	posibilidad de lluvia o nieve	un risque de pluie ou de neige	вероятность дождя или снега
+rainsnowdefinite	rain or snow	Regen oder Schnee	lluvia o nieve	pluie ou de neige	дождь или снег
+clear	clear conditions throughout the day	klare Bedingungen	condiciones claras	conditions claires	ясно в течение всего дня
+overcast	cloudy skies throughout the day	wolkige Himmel	cielos nublados	ciel nuageux	облачно в течении всего дня
+cloudierpm	becoming cloudy in the afternoon	Nachmittags wird es bewölkt	volviéndose nublado por la tarde	devenant nuageux l'après-midi	облачно во второй половине дня
+clearingpm	clearing in the afternoon	Nachmittags Lichtung	aclarando por la tarde	compensation l'après-midi	прояснение во второй половине дня
+variablecloud	partly cloudy throughout the day	teilweise bewölkt	parcialmente nublado	Partiellement nuageux	частично облачно в течение дня
+stormsstrong	strong storms possible	starke Stürme möglich	posibles tormentas fuertes	fortes tempêtes possibles	возможен сильный шторм
+stormspossible	storms possible	Stürme möglich	tormentas posibles	tempêtes possibles	возможен шторм
+skytempprecip	%s and %s with %s.	%s und %s mit %s.	%s y %s con %s.	%s et %s avec %s.	%s и %s с %s.
+skyprecip	%s with %s.	%s mit %s.	%s con %s.	%s avec %s.	%s с %s.
+sky	%s.	%s.	%s.	%s.	%s.
+tempprecipweek	%s with %s.	%s mit %s.	%s con %s.	%s avec %s.	%s с %s.
+tempweek	%s.	%s.	%s.	%s.	%s.
+dow1	Monday	Montag	lunes	lundi	Понедельник
+dow2	Tuesday	Dienstag	martes	mardi	Вторник
+dow3	Wednesday	Mittwoch	miércoles	mercredi	Среда
+dow4	Thursday	Donnerstag	jueves	jeudi	Четверг
+dow5	Friday	Freitag	viernes	vendredi	Пятница
+dow6	Saturday	Samstag	sábado	samedi	Суббота
+dow7	Sunday	Sonntag	domingo	dimanche	Воскресенье
+today	today	heute	hoy	aujourd'hui	  сегодня
+tomorrow	tomorrow	Morgen	mañana	demain	 завтра
