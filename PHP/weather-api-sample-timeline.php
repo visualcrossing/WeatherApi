@@ -20,7 +20,7 @@
 	//we want weather data to aggregated to daily details.
 	$aggregateHours=24;
 	//your API key
-	$apiKey="1PYNQ6AWUDJE9AFERDCHJHSXK";
+	$apiKey="YOUR_API_KEY";
 
 ?>
  <html>
