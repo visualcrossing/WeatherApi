@@ -26,7 +26,7 @@ public class WeatherForecastRetrieval {
 			.setParameter("contentType", "csv")
 			.setParameter("unitGroup", "metric")
 			.setParameter("locationMode", "single")
-			.setParameter("key", "1PYNQ6AWUDJE9AFERDCHJHSXK")
+			.setParameter("key", "YOUR_API_KEY")
 			.setParameter("locations", "London,UK");
 
 		HttpGet get = new HttpGet(builder.build());
