@@ -12,9 +12,11 @@
 	$query_str = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
 	parse_str($query_str, $query_params);
 	//the location for the weather data (an address or partial address)
+	//This assumes the php file is the first part of the URL. If the URL adds additional path segements before the target, modify the index from 1 accordingly.
 	$location=extractParam($segments,1, $query_params, "location");
 
 	// the unit group - us, metric or uk
+	//This assumes the php file is the first part of the URL. If the URL adds additional path segements before the target, modify the index from 2 accordingly.
 	$unitGroup=extractParam($segments,2, $query_params, "unitGroup");
 
 	//we want weather data to aggregated to daily details.
@@ -39,14 +41,14 @@
 		$response_data = json_decode($json_data);
 
 		$resolvedAddress=$response_data->resolvedAddress;
-		$days=$locationInstance->days;
+		$days=$response_data->days;
 	?>
 	<!-- Create the HTML for the weather forecast data -->
 	<h1>Weather Forecast for <?php echo $resolvedAddress; ?></h1>
 	<table>
 		<tr><th>Date</th><th>Max Temp</th><th>Min Temp</th><th>Precip</th><th>Wspd</th><th>Wgust</th><th>Cloud cover</th></tr>
 		<?php
-		foreach ($day as $days) {
+		foreach ($days as $day) {
 		?>
 		<tr>
 			 <td><?php echo $day->datetime; ?></td>
